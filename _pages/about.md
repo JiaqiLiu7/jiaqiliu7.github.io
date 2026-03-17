@@ -17,42 +17,67 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. Suspendisse condimentum, libero vel tempus mattis, risus risus vulputate libero, elementum fermentum mi neque vel nisl. Maecenas facilisis maximus dignissim. Curabitur mattis vulputate dui, tincidunt varius libero luctus eu. Mauris mauris nulla, scelerisque eget massa id, tincidunt congue felis. Sed convallis tempor ipsum rhoncus viverra. Pellentesque nulla orci, accumsan volutpat fringilla vitae, maximus sit amet tortor. Aliquam ultricies odio ut volutpat scelerisque. Donec nisl nisl, porttitor vitae pharetra quis, fringilla sed mi. Fusce pretium dolor ut aliquam consequat. Cras volutpat, tellus accumsan mattis molestie, nisl lacus tempus massa, nec malesuada tortor leo vel quam. Aliquam vel ex consectetur, vehicula leo nec, efficitur eros. Donec convallis non urna quis feugiat.
+# 👋🏻 Welcome!
 
-My research interest includes neural machine translation and computer vision. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+Hello! I am Jiaqi Liu (刘家琦), a third-year undergraduate student at the [School of Computer Science](https://cs.whu.edu.cn/), [Wuhan University](https://www.whu.edu.cn/).
 
+Currently, I am fortunate to be advised by [Prof. Mang Ye](https://marswhu.github.io/index.html) at the MARS Lab. I also had the great opportunity to work as a research assistant with [Prof. Qiang Yang](https://cse.hkust.edu.hk/~qyang/), focusing on visual representation learning for complex real-world data.
+
+🎓 I am actively seeking Fall 2027 Ph.D. opportunities in Computer Science! Please feel free to reach out if you are interested in my profile.
+
+# 🔎 Research Interests
+My long-term research goal is to build intelligent, adaptable, and multimodal systems that can reason about the real world. Currently, my focus encompasses the following areas:
+
+- **Federated & Graph Learning:** Exploring how to efficiently model complex structural data and enable continuous, collaborative learning across distributed environments without compromising privacy.
+
+- **Vision-Language Models (VLMs) & Multimodal Reasoning:** Moving beyond pure computer vision, I am highly interested in grounding visual perception into real-world contexts. My goal is to explore how to build robust multimodal systems.
+
+- **Large Language Models & Agents:** Building upon my background in structural data and distributed systems, I aim to explore how multi-agent collaboration, continuous learning, and structural knowledge (Graphs) can enhance the reasoning and alignment capabilities of Foundation Models.
+
+<!-- - **Computer Vision & AI for Science (AI4S):** Developing robust visual perception algorithms and extending deep learning to interdisciplinary challenges, such as analyzing complex astronomical data. -->
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2026.02*: &nbsp;🎉🎉 One paper was accepted by **CVPR 2026**.
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+**† Equal Contribution**
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[FedSDR: Federated Graph Learning with Structural Noise Detection and Reconstruction](https://openreview.net/pdf?id=DN3UEzYYKn)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Jiaqi Liu†**, Zihan Tan†, Guancheng Wan, Wenke Huang, He Li, Mang Ye
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+Accepted by **CVPR 2026**
+
+- We propose FedSDR, a spectra-based federated graph learning framework , featuring two key designs: (1) structural noise-aware aggregation for global noise detection and mitigation , and (2) robust local structure reconstruction guided by healthy global knowledge to repair corrupted graphs.
 </div>
 </div>
-
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+2025.11 **National First Prize** in the 19th "Challenge Cup" National College Students' Extracurricular Academic and Scientific Works Competition (Top 0.07%)
+2025.11 FiberHome Telecommunication Technologies Scholarship
+2025.9 Lei Jun Computer Innovation and Development Fund
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
-# 💬 Invited Talks
+<div style="margin-bottom: 40px;">
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <div style="flex: 1; font-size: 1.1em;">
+      <strong>2023.09 - Now</strong><br/>
+      Undergraduate, School of Computer Science, Wuhan University<br/>
+    </div>
+    <div style="flex-shrink: 0; max-width: 100px;">
+      <img src="../images/WHU.png" alt="Wuhan University Logo" style="width: 100%; height: auto; object-fit: contain;" />
+    </div>
+  </div>
+</div>
+
+<!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/)
 
 # 💻 Internships
-- *2019.05 - 2020.02*, [Lorem](https://github.com/), China.
+- *2019.05 - 2020.02*, [Lorem](https://github.com/), China. -->
