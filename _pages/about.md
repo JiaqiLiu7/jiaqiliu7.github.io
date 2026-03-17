@@ -37,29 +37,30 @@ My long-term research goal is to build intelligent, adaptable, and multimodal sy
 <!-- - **Computer Vision & AI for Science (AI4S):** Developing robust visual perception algorithms and extending deep learning to interdisciplinary challenges, such as analyzing complex astronomical data. -->
 
 # 🔥 News
-- *2026.02*: &nbsp;🎉🎉 One paper was accepted by **CVPR 2026**.
+- *2026.02*: &nbsp;🎉🎉 One paper was accepted by **CVPR 2026**. See you in Denver!
 
 # 📝 Publications 
 
 **† Equal Contribution**
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='../images/FedSDR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [FedSDR: Federated Graph Learning with Structural Noise Detection and Reconstruction](https://openreview.net/pdf?id=DN3UEzYYKn)
 
 **Jiaqi Liu†**, Zihan Tan†, Guancheng Wan, Wenke Huang, He Li, Mang Ye
 
-Accepted by **CVPR 2026**
-
-- We propose FedSDR, a spectra-based federated graph learning framework , featuring two key designs: (1) structural noise-aware aggregation for global noise detection and mitigation , and (2) robust local structure reconstruction guided by healthy global knowledge to repair corrupted graphs.
+We propose FedSDR, a spectra-based federated graph learning framework, featuring two key designs: (1) structural noise-aware aggregation for global noise detection and mitigation , and (2) robust local structure reconstruction guided by healthy global knowledge to repair corrupted graphs.
 </div>
 </div>
 
 # 🎖 Honors and Awards
-2025.11 **National First Prize** in the 19th "Challenge Cup" National College Students' Extracurricular Academic and Scientific Works Competition (Top 0.07%)
+
+2025.11 **National First Prize** in the 19th "Challenge Cup" Extracurricular Academic and Scientific Works Competition (Top 0.07%)
+
 2025.11 FiberHome Telecommunication Technologies Scholarship
-2025.9 Lei Jun Computer Innovation and Development Fund
+
+2025.5 Lei Jun Computer Innovation and Development Fund
 
 # 📖 Educations
 
