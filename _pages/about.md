@@ -21,7 +21,7 @@ redirect_from:
 
 Hello! I am Jiaqi Liu (刘家琦), a third-year undergraduate student at the [School of Computer Science](https://cs.whu.edu.cn/), [Wuhan University](https://www.whu.edu.cn/).
 
-Currently, I am fortunate to be advised by [Prof. Mang Ye](https://marswhu.github.io/index.html) at the MARS Lab. I also had the great opportunity to work as a research assistant with [Prof. Qiang Yang](https://cse.hkust.edu.hk/~qyang/), focusing on visual representation learning for complex real-world data.
+Currently, I am fortunate to be advised by [Prof. Mang Ye](https://marswhu.github.io/index.html) at the MARS Lab. I also have the great opportunity to work as a research assistant with [Prof. Qiang Yang](https://cse.hkust.edu.hk/~qyang/), focusing on visual representation learning for complex real-world data.
 
 🎓 I am actively seeking Fall 2027 Ph.D. opportunities in Computer Science! Please feel free to reach out if you are interested in my profile.
 
@@ -30,9 +30,9 @@ My long-term research goal is to build intelligent, adaptable, and multimodal sy
 
 - **Federated & Graph Learning:** Exploring how to efficiently model complex structural data and enable continuous, collaborative learning across distributed environments without compromising privacy.
 
-- **Vision-Language Models (VLMs) & Multimodal Reasoning:** Moving beyond pure computer vision, I am highly interested in grounding visual perception into real-world contexts. My goal is to explore how to build robust multimodal systems.
+- **Large Language Models & Agents:** Building upon my prior research in distributed systems and structured data, I aim to explore how multi-agent collaboration and symbolic knowledge representations can enhance the reasoning and alignment capabilities of Foundation Models.
 
-- **Large Language Models & Agents:** Building upon my background in structural data and distributed systems, I aim to explore how multi-agent collaboration, continuous learning, and structural knowledge (Graphs) can enhance the reasoning and alignment capabilities of Foundation Models.
+- **Vision-Language Models (VLMs) & Multimodal Reasoning:** Moving beyond linguistic or graph representations, I am eager to explore Vision-Language Models (VLMs) as a new frontier. My goal is to investigate how to build robust multimodal systems that can align visual perception with complex, real-world reasoning.
 
 <!-- - **Computer Vision & AI for Science (AI4S):** Developing robust visual perception algorithms and extending deep learning to interdisciplinary challenges, such as analyzing complex astronomical data. -->
 
@@ -44,9 +44,7 @@ My long-term research goal is to build intelligent, adaptable, and multimodal sy
 **† Equal Contribution**
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='../images/FedSDR.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-<a href="https://openreview.net/pdf?id=DN3UEzYYKn" style="color: black; text-decoration: none;"><strong>FedSDR: Federated Graph Learning with Structural Noise Detection and Reconstruction</strong></a>
+<div class='paper-box-text' markdown="1"><a href="https://openreview.net/pdf?id=DN3UEzYYKn" style="color: black; text-decoration: none;"><strong>FedSDR: Federated Graph Learning with Structural Noise Detection and Reconstruction</strong></a>
 
 **Jiaqi Liu†**, Zihan Tan†, Guancheng Wan, Wenke Huang, He Li, Mang Ye
 
@@ -68,7 +66,7 @@ We propose **FedSDR**, a spectra-based federated graph learning framework, featu
   <div style="display: flex; align-items: center; gap: 20px;">
     <div style="flex: 1; font-size: 1.1em;">
       <strong>2023.09 - Now</strong><br/>
-      Undergraduate, School of Computer Science, Wuhan University<br/>
+      Undergraduate, Software Engineering, Wuhan University<br/>
     </div>
     <div style="flex-shrink: 0; max-width: 100px;">
       <img src="../images/WHU.png" alt="Wuhan University Logo" style="width: 100%; height: auto; object-fit: contain;" />
