@@ -46,11 +46,11 @@ My long-term research goal is to build intelligent, adaptable, and multimodal sy
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='../images/FedSDR.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[FedSDR: Federated Graph Learning with Structural Noise Detection and Reconstruction](https://openreview.net/pdf?id=DN3UEzYYKn)
+<a href="https://openreview.net/pdf?id=DN3UEzYYKn" style="color: black; text-decoration: none;"><strong>FedSDR: Federated Graph Learning with Structural Noise Detection and Reconstruction</strong></a>
 
 **Jiaqi Liu†**, Zihan Tan†, Guancheng Wan, Wenke Huang, He Li, Mang Ye
 
-We propose FedSDR, a spectra-based federated graph learning framework, featuring two key designs: (1) structural noise-aware aggregation for global noise detection and mitigation , and (2) robust local structure reconstruction guided by healthy global knowledge to repair corrupted graphs.
+We propose **FedSDR**, a spectra-based federated graph learning framework, featuring two key designs: (1) structural noise-aware aggregation for global noise detection and mitigation, and (2) robust local structure reconstruction guided by healthy global knowledge to repair corrupted graphs.
 </div>
 </div>
 
@@ -60,7 +60,7 @@ We propose FedSDR, a spectra-based federated graph learning framework, featuring
 
 2025.11 FiberHome Telecommunication Technologies Scholarship
 
-2025.5 Lei Jun Computer Innovation and Development Fund
+2025.05 Lei Jun Computer Innovation and Development Fund
 
 # 📖 Educations
 
