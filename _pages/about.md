@@ -54,9 +54,11 @@ We propose **FedSDR**, a spectra-based federated graph learning framework, featu
 
 # 🎖 Honors and Awards
 
-2025.11 **National First Prize** in the 19th "Challenge Cup" Extracurricular Academic and Scientific Works Competition (Top 0.07%)
+2025.11 **National First Prize** in the 19th "Challenge Cup" Extracurricular Academic and Scientific Works Competition (Top 0.07% nationwide)
 
-2025.11 FiberHome Telecommunication Technologies Scholarship
+2025.11 Fiberhome Communication Scholarship
+
+2025.09 Outstanding Student Scholarship (Top 10% department-wide)
 
 2025.05 Lei Jun Computer Innovation and Development Fund
 

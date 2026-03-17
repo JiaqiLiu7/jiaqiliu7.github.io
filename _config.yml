@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Jiaqi Liu"
-description              : "&nbsp;"
+description              :
 repository               : "RayeRen/acad-homepage.github.io"
 google_scholar_stats_use_cdn : true
 
@@ -29,6 +29,7 @@ author:
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
   email            : "jiaqi.liu@whu.edu.cn"
+  resume           : "/files/Jiaqi_Liu_CV.pdf"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
