@@ -16,11 +16,6 @@
     <div class="author__urls-wrapper">
         <!-- <button class="btn btn--inverse">More Info & Contact</button> -->
         <ul class="author__urls social-icons">
-            {% if site.description %}
-            <li>
-                <div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div>
-            </li>
-            {% endif %}
             {% if author.resume %}
             <li><a href="{{ author.resume }}" target="_blank"><i class="fas fa-fw fa-file" aria-hidden="true"></i>
                     Resume</a></li>
@@ -267,3 +262,9 @@
         </div>
     </div>
 </div>
+
+<!-- {% if site.description %}
+            <li>
+                <div style="white-space: normal; margin-bottom: 1em;">{{ site.description }}</div>
+            </li>
+            {% endif %} -->
