@@ -44,7 +44,7 @@ My long-term research goal is to build intelligent, adaptable, and multimodal sy
 **† Equal Contribution**
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='../images/FedSDR.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1"><a href="https://openreview.net/pdf?id=DN3UEzYYKn" style="color: black; text-decoration: none;"><strong>FedSDR: Federated Graph Learning with Structural Noise Detection and Reconstruction</strong></a>
+<div class='paper-box-text' markdown="1"><a href="../files/FedSDR.pdf" style="color: black; text-decoration: none;"><strong>FedSDR: Federated Graph Learning with Structural Noise Detection and Reconstruction</strong></a>
 
 **Jiaqi Liu†**, Zihan Tan†, Guancheng Wan, Wenke Huang, He Li, Mang Ye
 
