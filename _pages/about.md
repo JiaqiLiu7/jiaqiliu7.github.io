@@ -28,7 +28,7 @@ Currently, I am fortunate to be advised by [Prof. Mang Ye](https://marswhu.githu
 # 🔎 Research Interests
 My long-term research goal is to build intelligent, adaptable, and multimodal systems that can reason about the real world. Currently, my focus encompasses the following areas:
 
-- **Federated & Graph Learning:** Exploring how to efficiently model complex structural data and enable continuous, collaborative learning across distributed environments without compromising privacy.
+- **Federated & Graph Learning:** Exploring how to efficiently model complex structural data and enable continual, collaborative learning across distributed environments without compromising privacy.
 
 - **Large Language Models & Agents:** Building upon my prior research in distributed systems and structured data, I aim to explore how multi-agent collaboration and symbolic knowledge representations can enhance the reasoning and alignment capabilities of Foundation Models.
 
@@ -47,6 +47,8 @@ My long-term research goal is to build intelligent, adaptable, and multimodal sy
 <div class='paper-box-text' markdown="1"><a href="../files/FedSDR.pdf" style="color: black; text-decoration: none;"><strong>FedSDR: Federated Graph Learning with Structural Noise Detection and Reconstruction</strong></a>
 
 **Jiaqi Liu†**, Zihan Tan†, Guancheng Wan, Wenke Huang, He Li, Mang Ye
+
+<strong style="color: red;"><i>Highlight Presentation</i></strong>
 
 We propose **FedSDR**, a spectra-based federated graph learning framework, featuring two key designs: (1) structural noise-aware aggregation for global noise detection and mitigation, and (2) robust local structure reconstruction guided by healthy global knowledge to repair corrupted graphs.
 </div>
