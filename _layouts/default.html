@@ -30,13 +30,9 @@ layout: compress
     </article>
   </div>
 
-  <div id="clustrmap-container"
-    style="display: none; text-align: center; margin: 30px auto; padding-bottom: 20px; width: 100%; max-width: 800px;">
-    <hr style="margin-bottom: 20px; border: 0; border-top: 1px solid #eee;">
-
-    <script type="text/javascript" id="clustrmaps"
-      src="//clustrmaps.com/map_v2.js?d=xFUpag_K0X4IRHg6kx2CiRRVEJUNUqxwNZ3ecYkelrw"></script>
-
+  <div id="clustrmap-container" style="display: none; width: 100%; margin-top: 2em; padding-bottom: 2em;">
+    <div id="clustrmap-inner" style="text-align: center; margin: 0 auto; max-width: 400px;">
+    </div>
   </div>
 
   {% include scripts.html %}
@@ -45,20 +41,31 @@ layout: compress
     document.addEventListener("DOMContentLoaded", function () {
       var toggleBtn = document.getElementById("toggle-clustrmap");
       var mapContainer = document.getElementById("clustrmap-container");
+      var mapInner = document.getElementById("clustrmap-inner");
+      var isMapLoaded = false; // 增加一个标记，记录地图是否已经加载
 
-      if (toggleBtn && mapContainer) {
+      if (toggleBtn && mapContainer && mapInner) {
         toggleBtn.addEventListener("click", function (e) {
-          e.preventDefault(); // 再次确保不会触发默认的跳转行为
+          e.preventDefault();
 
           // 切换显示状态
           if (mapContainer.style.display === "none") {
             mapContainer.style.display = "block";
-            // 可选：如果你希望点开地图后，让地球图标恢复彩色，可以取消下面这行的注释
-            toggleBtn.style.filter = "grayscale(0%)";
+
+            // 关键修复：当容器显示出来后，如果是第一次点击，动态加载真实的地图脚本
+            if (!isMapLoaded) {
+              var script = document.createElement("script");
+              script.type = "text/javascript";
+              script.id = "clstr_globe";
+              // 强制使用 https 保证安全加载
+              script.src = "https://clustrmaps.com/globe.js?d=xFUpag_K0X4IRHg6kx2CiRRVEJUNUqxwNZ3ecYkelrw";
+
+              mapInner.appendChild(script); // 把脚本塞进容器
+              isMapLoaded = true; // 标记为已加载，下次点击不再重复塞入
+            }
+
           } else {
             mapContainer.style.display = "none";
-            // 可选：隐藏地图后，让地球图标重新变灰
-            toggleBtn.style.filter = "grayscale(100%)";
           }
         });
       }
