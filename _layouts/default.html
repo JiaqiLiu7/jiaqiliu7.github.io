@@ -30,8 +30,10 @@ layout: compress
     </article>
   </div>
 
-  <div id="clustrmap-container" style="display: none; width: 100%; margin-top: 2em; padding-bottom: 2em;">
-    <div id="clustrmap-inner" style="text-align: center; margin: 0 auto; max-width: 400px;">
+  <div id="clustrmap-container" style="position: absolute; left: -9999px; visibility: hidden; width: 100%;">
+    <div style="text-align: center; margin: 0 auto; max-width: 200px;">
+      <script type="text/javascript" id="clstr_globe"
+        src="//clustrmaps.com/globe.js?d=xFUpag_K0X4IRHg6kx2CiRRVEJUNUqxwNZ3ecYkelrw"></script>
     </div>
   </div>
 
@@ -41,37 +43,38 @@ layout: compress
     document.addEventListener("DOMContentLoaded", function () {
       var toggleBtn = document.getElementById("toggle-clustrmap");
       var mapContainer = document.getElementById("clustrmap-container");
-      var mapInner = document.getElementById("clustrmap-inner");
-      var isMapLoaded = false; // 增加一个标记，记录地图是否已经加载
 
-      if (toggleBtn && mapContainer && mapInner) {
+      if (toggleBtn && mapContainer) {
         toggleBtn.addEventListener("click", function (e) {
           e.preventDefault();
 
-          // 切换显示状态
-          if (mapContainer.style.display === "none") {
-            mapContainer.style.display = "block";
+          // 判断当前地图是否在"屏幕外"
+          if (mapContainer.style.position === "absolute") {
+            // 1. 显示地图：取消绝对定位，恢复正常布局，并加上下边距
+            mapContainer.style.position = "relative";
+            mapContainer.style.left = "0";
+            mapContainer.style.visibility = "visible";
+            mapContainer.style.marginTop = "2em";
+            mapContainer.style.paddingBottom = "2em";
 
-            // 关键修复：当容器显示出来后，如果是第一次点击，动态加载真实的地图脚本
-            if (!isMapLoaded) {
-              var script = document.createElement("script");
-              script.type = "text/javascript";
-              script.id = "clstr_globe";
-              // 强制使用 https 保证安全加载
-              script.src = "https://clustrmaps.com/globe.js?d=xFUpag_K0X4IRHg6kx2CiRRVEJUNUqxwNZ3ecYkelrw";
-
-              mapInner.appendChild(script); // 把脚本塞进容器
-              isMapLoaded = true; // 标记为已加载，下次点击不再重复塞入
-            }
+            // 2. 图标变彩色：去掉灰度滤镜
+            toggleBtn.style.filter = "grayscale(0%)";
 
           } else {
-            mapContainer.style.display = "none";
+            // 1. 隐藏地图：重新"流放"到屏幕外，去掉边距
+            mapContainer.style.position = "absolute";
+            mapContainer.style.left = "-9999px";
+            mapContainer.style.visibility = "hidden";
+            mapContainer.style.marginTop = "0";
+            mapContainer.style.paddingBottom = "0";
+
+            // 2. 图标变灰：加上 100% 灰度滤镜
+            toggleBtn.style.filter = "grayscale(100%)";
           }
         });
       }
     });
   </script>
-
 </body>
 
 </html>
