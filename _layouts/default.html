@@ -30,10 +30,11 @@ layout: compress
     </article>
   </div>
 
-  <div id="clustrmap-container" style="position: absolute; left: -9999px; visibility: hidden; width: 100%;">
+  <div id="clustrmap-container"
+    style="position: absolute; top: -9999px; left: -9999px; visibility: hidden; width: 100%;">
     <div style="text-align: center; margin: 0 auto; max-width: 200px;">
       <script type="text/javascript" id="clstr_globe"
-        src="//clustrmaps.com/globe.js?d=xFUpag_K0X4IRHg6kx2CiRRVEJUNUqxwNZ3ecYkelrw"></script>
+        src="https://clustrmaps.com/globe.js?d=xFUpag_K0X4IRHg6kx2CiRRVEJUNUqxwNZ3ecYkelrw"></script>
     </div>
   </div>
 
@@ -48,27 +49,31 @@ layout: compress
         toggleBtn.addEventListener("click", function (e) {
           e.preventDefault();
 
-          // 判断当前地图是否在"屏幕外"
           if (mapContainer.style.position === "absolute") {
-            // 1. 显示地图：取消绝对定位，恢复正常布局，并加上下边距
+            // 1. 显示地图：恢复相对定位，取消 top 和 left 的流放
             mapContainer.style.position = "relative";
-            mapContainer.style.left = "0";
+            mapContainer.style.top = "auto";
+            mapContainer.style.left = "auto";
             mapContainer.style.visibility = "visible";
-            mapContainer.style.marginTop = "2em";
+
+            // 【距离微调】这里改成了 0.5em，地球会明显往上靠
+            mapContainer.style.marginTop = "0.5em";
             mapContainer.style.paddingBottom = "2em";
 
-            // 2. 图标变彩色：去掉灰度滤镜
+            // 图标变彩色
             toggleBtn.style.filter = "grayscale(0%)";
 
           } else {
-            // 1. 隐藏地图：重新"流放"到屏幕外，去掉边距
+            // 2. 隐藏地图：同时向左和向上流放，彻底消除页面底部的幽灵空白
             mapContainer.style.position = "absolute";
+            mapContainer.style.top = "-9999px";
             mapContainer.style.left = "-9999px";
             mapContainer.style.visibility = "hidden";
+
             mapContainer.style.marginTop = "0";
             mapContainer.style.paddingBottom = "0";
 
-            // 2. 图标变灰：加上 100% 灰度滤镜
+            // 图标变灰
             toggleBtn.style.filter = "grayscale(100%)";
           }
         });
