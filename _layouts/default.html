@@ -30,12 +30,13 @@ layout: compress
     </article>
   </div>
 
-  <div id="clustrmap-container"
-    style="position: absolute; top: -9999px; left: -9999px; visibility: hidden; width: 100%;">
-    <div style="text-align: center; margin: 0 auto; max-width: 200px;">
-      <script type="text/javascript" id="clstr_globe"
-        src="https://clustrmaps.com/globe.js?d=xFUpag_K0X4IRHg6kx2CiRRVEJUNUqxwNZ3ecYkelrw"></script>
+  <div id="clustrmap-container" style="position: absolute; top: -9999px; left: -9999px; width: 100%;">
+
+    <div id="mmv-click-zone" style="text-align: center; margin: 0 auto; max-width: 200px; cursor: pointer;">
+      <script type="text/javascript" id="mmvst_globe"
+        src="https://mapmyvisitors.com/globe.js?d=8kWn8VhM7u93RkryxdW0YwU9DU8GZiT3nqt0LXB4Zzc"></script>
     </div>
+
   </div>
 
   {% include scripts.html %}
@@ -44,19 +45,26 @@ layout: compress
     document.addEventListener("DOMContentLoaded", function () {
       var toggleBtn = document.getElementById("toggle-clustrmap");
       var mapContainer = document.getElementById("clustrmap-container");
+      var mmvClickZone = document.getElementById("mmv-click-zone");
 
+      // 1. 安全跳转：点击地球区域跳转到统计面板
+      if (mmvClickZone) {
+        mmvClickZone.addEventListener("click", function () {
+          window.open("https://mapmyvisitors.com/web/1c5oq", "_blank");
+        });
+      }
+
+      // 2. 显隐逻辑：点击顶部地球图标控制
       if (toggleBtn && mapContainer) {
         toggleBtn.addEventListener("click", function (e) {
           e.preventDefault();
 
           if (mapContainer.style.position === "absolute") {
-            // 1. 显示地图：恢复相对定位，取消 top 和 left 的流放
+            // 显示地球：取消绝对定位和负坐标，恢复到正常文档流中
             mapContainer.style.position = "relative";
             mapContainer.style.top = "auto";
             mapContainer.style.left = "auto";
-            mapContainer.style.visibility = "visible";
 
-            // 【距离微调】这里改成了 0.5em，地球会明显往上靠
             mapContainer.style.marginTop = "0.5em";
             mapContainer.style.paddingBottom = "2em";
 
@@ -64,11 +72,10 @@ layout: compress
             toggleBtn.style.filter = "grayscale(0%)";
 
           } else {
-            // 2. 隐藏地图：同时向左和向上流放，彻底消除页面底部的幽灵空白
+            // 收起地球：重新绝对定位流放到屏幕外，完全不占底部空间
             mapContainer.style.position = "absolute";
             mapContainer.style.top = "-9999px";
             mapContainer.style.left = "-9999px";
-            mapContainer.style.visibility = "hidden";
 
             mapContainer.style.marginTop = "0";
             mapContainer.style.paddingBottom = "0";
