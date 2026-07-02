@@ -30,18 +30,18 @@ layout: compress
     </article>
   </div>
 
-  <div id="clustrmap-container" style="position: absolute; top: -9999px; left: -9999px; width: 100%;">
+  <div id="clustrmap-container">
 
-    <div id="mmv-click-zone" style="text-align: center; margin: 0 auto; max-width: 200px; cursor: pointer;">
-      <script type="text/javascript" id="mmvst_globe"
-        src="https://mapmyvisitors.com/globe.js?d=8kWn8VhM7u93RkryxdW0YwU9DU8GZiT3nqt0LXB4Zzc"></script>
+    <div id="mmv-click-zone">
+      <script id="mmvst_globe" src="https://mapmyvisitors.com/globe.js?d=8kWn8VhM7u93RkryxdW0YwU9DU8GZiT3nqt0LXB4Zzc">
+      </script>
     </div>
 
   </div>
 
-  {% include scripts.html %}
+  <!-- {% include scripts.html %} -->
 
-  <script>
+  <!-- <script>
     document.addEventListener("DOMContentLoaded", function () {
       var toggleBtn = document.getElementById("toggle-clustrmap");
       var mapContainer = document.getElementById("clustrmap-container");
@@ -86,7 +86,7 @@ layout: compress
         });
       }
     });
-  </script>
+  </script> -->
 </body>
 
 </html>
