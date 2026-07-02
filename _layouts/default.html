@@ -30,40 +30,43 @@ layout: compress
     </article>
   </div>
 
-  <div id="clustrmap-container">
+  <div id="clustrmap-container"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 0; opacity: 0.001; z-index: -1; pointer-events: none; overflow: visible;">
 
-    <div id="mmv-click-zone">
-      <script id="mmvst_globe" src="https://mapmyvisitors.com/globe.js?d=8kWn8VhM7u93RkryxdW0YwU9DU8GZiT3nqt0LXB4Zzc">
-      </script>
+    <div id="mmv-click-zone" style="text-align: center; margin: 0 auto; max-width: 200px; cursor: pointer;">
+      <script type="text/javascript" id="mmvst_globe"
+        src="https://mapmyvisitors.com/globe.js?d=8kWn8VhM7u93RkryxdW0YwU9DU8GZiT3nqt0LXB4Zzc"></script>
     </div>
 
   </div>
 
-  <!-- {% include scripts.html %} -->
+  {% include scripts.html %}
 
-  <!-- <script>
+  <script>
     document.addEventListener("DOMContentLoaded", function () {
       var toggleBtn = document.getElementById("toggle-clustrmap");
       var mapContainer = document.getElementById("clustrmap-container");
       var mmvClickZone = document.getElementById("mmv-click-zone");
 
-      // 1. 安全跳转：点击地球区域跳转到统计面板
+      // 安全跳转逻辑
       if (mmvClickZone) {
         mmvClickZone.addEventListener("click", function () {
           window.open("https://mapmyvisitors.com/web/1c5oq", "_blank");
         });
       }
 
-      // 2. 显隐逻辑：点击顶部地球图标控制
+      // 显隐逻辑：通过透明度和文档流控制
       if (toggleBtn && mapContainer) {
         toggleBtn.addEventListener("click", function (e) {
           e.preventDefault();
 
-          if (mapContainer.style.position === "absolute") {
-            // 显示地球：取消绝对定位和负坐标，恢复到正常文档流中
+          if (mapContainer.style.opacity === "0.001") {
+            // 显示地球：恢复相对定位，完全不透明，提到最上层，恢复点击
             mapContainer.style.position = "relative";
-            mapContainer.style.top = "auto";
-            mapContainer.style.left = "auto";
+            mapContainer.style.height = "auto";
+            mapContainer.style.opacity = "1";
+            mapContainer.style.zIndex = "1";
+            mapContainer.style.pointerEvents = "auto";
 
             mapContainer.style.marginTop = "0.5em";
             mapContainer.style.paddingBottom = "2em";
@@ -72,10 +75,12 @@ layout: compress
             toggleBtn.style.filter = "grayscale(0%)";
 
           } else {
-            // 收起地球：重新绝对定位流放到屏幕外，完全不占底部空间
+            // 收起地球：切回绝对定位（不占空间），回到顶端，透明隐身，沉入底层
             mapContainer.style.position = "absolute";
-            mapContainer.style.top = "-9999px";
-            mapContainer.style.left = "-9999px";
+            mapContainer.style.height = "0";
+            mapContainer.style.opacity = "0.000001";
+            mapContainer.style.zIndex = "-1";
+            mapContainer.style.pointerEvents = "none";
 
             mapContainer.style.marginTop = "0";
             mapContainer.style.paddingBottom = "0";
@@ -86,7 +91,7 @@ layout: compress
         });
       }
     });
-  </script> -->
+  </script>
 </body>
 
 </html>
