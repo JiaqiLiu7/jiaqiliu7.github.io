@@ -56,9 +56,11 @@ We propose **FedSDR**, a spectra-based federated graph learning framework, featu
 
 # 🎖 Honors and Awards
 
+2026.05 Lead Investigator, National Key Supported Project, Undergraduate Training Programs for Innovation (Top 4 of 1,245 Univ-wide)
+
 2026.03 Scientific Innovation Pioneer (**Sole Recipient** among all undergraduate and graduate students in the School)
 
-2025.11 **National First Prize** in the 19th "Challenge Cup" Academic and Scientific Works Competition (Top 0.07% nationwide)
+2025.11 **National First Prize** in the 19th "Challenge Cup" Academic and Scientific Works Competition (Top 0.07% Nationwide)
 
 2025.11 Fiberhome Communication Scholarship
 
