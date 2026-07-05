@@ -62,8 +62,10 @@ layout: compress
         toggleBtn.addEventListener("click", function (e) {
           e.preventDefault();
 
-          if (mapContainer.style.opacity === "0.001") {
-            // 显示地球：恢复相对定位，完全不透明，提到最上层，恢复点击
+          const hidden = mapContainer.style.position === "absolute";
+
+          if (hidden) {
+
             mapContainer.style.position = "relative";
             mapContainer.style.height = "auto";
             mapContainer.style.opacity = "1";
@@ -73,21 +75,19 @@ layout: compress
             mapContainer.style.marginTop = "0.5em";
             mapContainer.style.paddingBottom = "2em";
 
-            // 图标变彩色
             toggleBtn.style.filter = "grayscale(0%)";
 
           } else {
-            // 收起地球：切回绝对定位（不占空间），回到顶端，透明隐身，沉入底层
+
             mapContainer.style.position = "absolute";
             mapContainer.style.height = "0";
-            mapContainer.style.opacity = "0.000001";
+            mapContainer.style.opacity = "0";
             mapContainer.style.zIndex = "-1";
             mapContainer.style.pointerEvents = "none";
 
             mapContainer.style.marginTop = "0";
             mapContainer.style.paddingBottom = "0";
 
-            // 图标变灰
             toggleBtn.style.filter = "grayscale(100%)";
           }
         });
