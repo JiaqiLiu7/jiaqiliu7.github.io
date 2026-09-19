@@ -19,7 +19,7 @@ redirect_from:
 
 # 👋🏻 Welcome!
 
-Hello! I am Jiaqi Liu (刘家琦), a third-year undergraduate student at the [School of Computer Science](https://cs.whu.edu.cn/), [Wuhan University](https://www.whu.edu.cn/).
+Hello! I am Jiaqi Liu (刘家琦), a fourth-year undergraduate student at the [School of Computer Science](https://cs.whu.edu.cn/), [Wuhan University](https://www.whu.edu.cn/).
 
 <!-- Currently, I am fortunate to be advised by [Prof. Mang Ye](https://marswhu.github.io/index.html) at the MARS Lab. I also have the great opportunity to work as a research assistant with [Prof. Qiang Yang](https://cse.hkust.edu.hk/~qyang/) at HKUST, focusing on visual representation learning for complex real-world data. -->
 Currently, I am fortunate to be advised by [Prof. Mang Ye](https://marswhu.github.io/index.html) at the MARS Lab. I also have the great opportunity to collaborate on a research project with HKUST, focusing on visual representation learning for complex real-world data.
