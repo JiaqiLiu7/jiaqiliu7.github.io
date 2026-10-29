@@ -27,7 +27,7 @@ Currently, I am fortunate to be advised by [Prof. Mang Ye](https://marswhu.githu
 🎓 I am actively seeking Fall 2027 Ph.D. opportunities in Computer Science! Please feel free to reach out if you are interested in my profile.
 
 # 🔎 Research Interests
-My long-term research goal is to build intelligent, adaptable, and multimodal systems that can reason about the real world. Currently, my focus encompasses the following areas:
+My long-term research goal is to build trustworthy, adaptable, and multimodal systems that can reason about the real world. Currently, my focus encompasses the following areas:
 
 - **Federated & Graph Learning:** Exploring how to efficiently model complex structural data and enable continual, collaborative learning across distributed environments without compromising privacy.
 
